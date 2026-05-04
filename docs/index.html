@@ -152,10 +152,6 @@ function buildGroupToggles(){
   });
 }
 
-const CORE_GROUPS={identity:["host_name","model_name","base_model","model_creator_name"],pricing:["price_1m_blended_3_to_1","price_m_tokens_blended_3_to_1_per_dollar"],derived:["intel_per_resp","coding_per_resp","intel_per_price_resp","coding_per_price_resp"],quality:["model_intelligence_index","model_coding_index","model_tau2"],speed:["avg_response_time_seconds"],model_meta:["context_window","model_output_tokens","supports_web_search","reasoning_level","model_type"]};
-const CORE_LABELS={"host_name":"Provider","model_name":"Model","base_model":"Base","model_creator_name":"Creator","model_type":"Type","reasoning_level":"R Level","price_1m_blended_3_to_1":"Blended $/1M","price_m_tokens_blended_3_to_1_per_dollar":"M tok/$","model_intelligence_index":"Intel","model_coding_index":"Coding","model_tau2":"tau2","supports_web_search":"Search","supports_file_upload":"Upload","context_window":"Ctx","model_output_tokens":"MaxOut","avg_response_time_seconds":"RespT(s)","intel_per_resp":"Intel/Resp","coding_per_resp":"Coding/Resp","intel_per_price_resp":"Intel/$Resp","coding_per_price_resp":"Coding/$Resp"};
-const HIGHLIGHTS={"model_intelligence_index":"higher","model_coding_index":"higher","model_tau2":"higher","avg_response_time_seconds":"lower","price_1m_blended_3_to_1":"lower","intel_per_resp":"higher","coding_per_resp":"higher","intel_per_price_resp":"higher","coding_per_price_resp":"higher"};
-
 function visibleCols(){
   const allCols=CORE_COLS||Object.keys(CORE_LABELS);
   return allCols.filter(c=>{
