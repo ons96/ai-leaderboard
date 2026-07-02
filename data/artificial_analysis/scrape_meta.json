@@ -1,7 +1,7 @@
 {
-  "scrape_date": "2026-07-01T09:44:54.981858+00:00",
+  "scrape_date": "2026-07-02T08:55:14.200903+00:00",
   "source_url": "https://artificialanalysis.ai/leaderboards/providers?deprecation=all",
-  "total_host_models": 889,
-  "active_host_models": 889,
-  "columns": 122
+  "total_host_models": 897,
+  "active_host_models": 897,
+  "columns": 118
 }
